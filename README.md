@@ -15,6 +15,11 @@
 You can watch the video walkthrough of the app [here](https://drive.google.com/file/d/1iIgUXlPNRb396lLM6GAZbEX9jhgHlJcg/view?usp=share_link)
 
 This app is a node.js terminal application which accepts input from the user using inquirer and creates a html page showing the employee information of a company. Each employee object is created using classes OOP.
+Here are some screenshots from the app:
+
+![Html View](src/images/htmlpagecapture.JPG)
+
+![Terminal View](src/images/terminalview.JPG)
 
 ## Installation
 N/A
