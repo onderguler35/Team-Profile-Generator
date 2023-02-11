@@ -1,8 +1,4 @@
 {
-  "dependencies": {
-    "inquirer": "^8.2.5",
-    "jest": "^29.4.2"
-  },
   "name": "teamprofilegen",
   "description": "A node js app using inquirer to receive input and create objects using Classes and OOP",
   "version": "1.0.0",
@@ -10,7 +6,6 @@
   "directories": {
     "lib": "lib"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "Jest"
   },
@@ -23,5 +18,9 @@
   "bugs": {
     "url": "https://github.com/onderguler35/teamProfileGen/issues"
   },
-  "homepage": "https://github.com/onderguler35/teamProfileGen#readme"
+  "homepage": "https://github.com/onderguler35/teamProfileGen#readme",
+  "dependencies": {
+    "inquirer": "^8.2.5",
+    "jest": "^29.4.2"
+  }
 }

@@ -12,7 +12,7 @@
 * [Contribute](#Contribute)
 
 ## Description
-You can watch the video walkthrough of the app [here](https://drive.google.com/file/d/1O570kPm1hJsO23qrZJq9g02g7jxFIdOL/view)
+You can watch the video walkthrough of the app [here](https://drive.google.com/file/d/1iIgUXlPNRb396lLM6GAZbEX9jhgHlJcg/view?usp=share_link)
 
 This app is a node.js terminal application which accepts input from the user using inquirer and creates a html page showing the employee information of a company. Each employee object is created using classes OOP.
 
@@ -26,7 +26,7 @@ Simply run node index.js from the directory folder and respond to prompts
 Thanks to my teaching team at the bootcamp. And as always [w3schools](https://www.w3schools.com) helped a lot with their tutorials.
 
 ## Licence
-This app is distributed under MIT Licence
+This app is distributed under ![Licence Badge](https://img.shields.io/badge/MIT-Licence-green)
 
 ## Features
 Terminal application using inquirer package for cli input and jest for testing.
