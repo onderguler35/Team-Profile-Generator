@@ -78,40 +78,79 @@ function selectProfile() {
 }
 
 function promptEngineer() {
-    inquirer
-      .prompt([
-        {
-          type: "input",
-          name: "engineerName",
-          message: "Please enter the engineer's name?"
-        },
-  
-        {
-          type: "input",
-          name: "engineerId",
-          message: "Please enter the engineer's employee ID number?"
-        },
-  
-        {
-          type: "input",
-          name: "engineerEmail",
-          message: "Please enter the engineer's email address?"
-        },
-  
-        {
-          type: "input",
-          name: "engineerGithub",
-          message: "Please enter the engineer's GitHub username?"
-        },
-      ])
-      .then(function (data) {
-        const engineer = new Engineer(
-          data.engineerName,
-          data.engineerId,
-          data.engineerEmail,
-          data.engineerGithub
-        );
-        profileArr.push(engineer);
-        selectProfile();
-      });
+  inquirer
+    .prompt([
+      {
+        type: "input",
+        name: "engineerName",
+        message: "Please enter the engineer's name?",
+      },
+
+      {
+        type: "input",
+        name: "engineerId",
+        message: "Please enter the engineer's employee ID number?",
+      },
+
+      {
+        type: "input",
+        name: "engineerEmail",
+        message: "Please enter the engineer's email address?",
+      },
+
+      {
+        type: "input",
+        name: "engineerGithub",
+        message: "Please enter the engineer's GitHub username?",
+      },
+    ])
+    .then(function (data) {
+      const engineer = new Engineer(
+        data.engineerName,
+        data.engineerId,
+        data.engineerEmail,
+        data.engineerGithub
+      );
+      profileArr.push(engineer);
+      selectProfile();
+    });
+}
+
+function promptIntern() {
+  inquirer
+    .prompt([
+      {
+        type: "input",
+        name: "internName",
+        message: "Please enter the intern's name?",
+      },
+
+      {
+        type: "input",
+        name: "internId",
+        message: "Please enter the intern employee ID number?",
+      },
+
+      {
+        type: "input",
+        name: "internEmail",
+        message: "Please enter the intern's email address?",
+      },
+
+      {
+        type: "input",
+        name: "schoolName",
+        message: "Please enter the school the intern attends?",
+      },
+    ])
+    .then(function (data) {
+      const intern = new Intern(
+        data.internName,
+        data.internId,
+        data.internEmail,
+        data.schoolName
+      );
+      profileArr.push(intern);
+      selectProfile();
+    });
 }
