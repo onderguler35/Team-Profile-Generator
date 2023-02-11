@@ -76,3 +76,42 @@ function selectProfile() {
       } else renderHtml();
     });
 }
+
+function promptEngineer() {
+    inquirer
+      .prompt([
+        {
+          type: "input",
+          name: "engineerName",
+          message: "Please enter the engineer's name?"
+        },
+  
+        {
+          type: "input",
+          name: "engineerId",
+          message: "Please enter the engineer's employee ID number?"
+        },
+  
+        {
+          type: "input",
+          name: "engineerEmail",
+          message: "Please enter the engineer's email address?"
+        },
+  
+        {
+          type: "input",
+          name: "engineerGithub",
+          message: "Please enter the engineer's GitHub username?"
+        },
+      ])
+      .then(function (data) {
+        const engineer = new Engineer(
+          data.engineerName,
+          data.engineerId,
+          data.engineerEmail,
+          data.engineerGithub
+        );
+        profileArr.push(engineer);
+        selectProfile();
+      });
+}
