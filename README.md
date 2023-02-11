@@ -14,6 +14,8 @@
 ## Description
 You can watch the video walkthrough of the app [here](https://drive.google.com/file/d/1iIgUXlPNRb396lLM6GAZbEX9jhgHlJcg/view?usp=share_link)
 
+To view the generated html page during the video walkthrough visit the deployed github page [here](https://onderguler35.github.io/teamProfileGen/)
+
 This app is a node.js terminal application which accepts input from the user using inquirer and creates a html page showing the employee information of a company. Each employee object is created using classes OOP.
 Here are some screenshots from the app:
 
@@ -44,4 +46,6 @@ Run npm run test
 
 ## Questions
 Please click this link to go to [Github repo](https://github.com/onderguler35/teamProfileGen)
+
+
 For any questions or comments please [contact me](mailto:onder5@hotmail.com)
