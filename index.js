@@ -156,7 +156,7 @@ function promptIntern() {
 }
 
 function renderHtml() {
-  fs.writeFileSync(outputPath, renderPage(profileArr), "UTF-8");
+  fs.writeFileSync(outputPath, render(profileArr), "UTF-8");
   console.log("Thank you! All profiles created!");
 }
 
