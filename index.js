@@ -57,7 +57,7 @@ function promptManager() {
       selectProfile();
     });
 }
-// the below function asks user to make a choice on which type of employee to add or not anymore. Then goes to relevant function as per the choice.
+// the below function asks user to make a choice on which type of employee to add or not anymore. Then goes to relevant function as per the choice. If the user selects not to add anymore, it sends the gathered array to renderHtml function to create the output page html.
 function selectProfile() {
   inquirer
     .prompt([
@@ -76,7 +76,7 @@ function selectProfile() {
       } else renderHtml();
     });
 }
-
+// using inquirer to get the info for the engineer empoyee object and adding it to our array once complete. And then sending back to select menu to give option to the user to enter more employees to the team and select which type.
 function promptEngineer() {
   inquirer
     .prompt([
@@ -115,7 +115,7 @@ function promptEngineer() {
       selectProfile();
     });
 }
-
+// using inquirer to get the info for the intern type empoyee object and adding it to our array once complete. And then sending back to select menu to give option to the user to enter more employees to the team and select which type.
 function promptIntern() {
   inquirer
     .prompt([
@@ -154,3 +154,10 @@ function promptIntern() {
       selectProfile();
     });
 }
+
+function renderHtml() {
+  fs.writeFileSync(outputPath, renderPage(profileArr), "UTF-8");
+  console.log("Thank you! All profiles created!");
+}
+
+init();
